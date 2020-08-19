@@ -1,0 +1,444 @@
+---
+title: "Git and Github"
+author: "Marta Cousido Rocha"
+date: "10/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction 
+
+Git is a version control system, a tool that
+tracks changes in to your fields (for example, code field) and shares those changes with others. Git is most useful when combined with GitHub
+(http://github.com), a website that allows you to share your work (usually, code) with the world, ask improvements via **pull requests** (described below)
+and track issues. 
+
+
+Git + GitHub is the most popular version control system for developers of R packages (this is clear since the
+thousands of R packages hosted on GitHub).
+Git and GitHub are generally useful for all software development and data analysis, not just R packages. 
+
+
+# How to Create an Account on GitHub
+
+This section teaches you how to sign up for a free personal account on GitHub. Your free GitHub account gives you unlimited
+access to public and private software repositories and the ability to collaborate with up to **3 users**.
+
+To create your Github account follow the next steps.
+
+1. Go to https://github.com/join in a web browser. 
+2. Enter your personal information. 
+3. Click the green Create an account button. 
+4. Complete the CAPTCHA puzzle. The instructions vary by puzzle, so just follow the on-screen instructions
+to confirm that you are a human.
+5. Click the Choose button for your desired plan (Free, Pro, Team, or Enterprise). One you select a plan, GitHub will send an email
+confirmation message. To start the Free plan is a good choice.
+6. Click the Verify email address button in the message from GitHub. 
+7. Review your plan selection and click Continue. 
+8. Select your preferences and click Submit.
+
+Perfect! You have a Github account, please take note of of your: Username, Email address and Password.
+
+# GitHub website
+
+We start the description of the useful tools that Git provides using Github website. Go to https://github.com/login and enter your Username or Email address and Password.
+
+## Create a Repository
+
+A repository is usually used to organize a single project.
+Repositories can contain folders and files, images, videos,
+spreadsheets, and data sets – anything your project needs.
+We recommend including a README, or a file with
+information about your project. 
+
+1. In the upper right corner, click + and then select New repository.
+2. Name your repository hello-world.
+3. Write a short description.
+4. Choose between Public (Anyone can see this repository but you choose who can commit) or Private (You choose who can see and commit to this repository).
+5. Select Initialize this repository with a README (this file will contain short description introduced before.
+6. Click Create repository.
+
+#### Deleting a repository
+
+You can delete any repository (or fork, below we explain which is a fork) if you have administrative permissions for the repository (or fork). 
+
+On GitHub, navigate to the main page of the repository.
+
+1. Under your repository name, click  Settings.
+
+2. Repository settings button
+3. Under Danger Zone, click Delete this repository.
+
+4. To verify that you're deleting the correct repository, type the name of the repository you want to delete.
+
+5. Click I understand the consequences, delete this repository.
+
+
+#### About repository restoration
+
+A deleted repository can be restored within 90 days.
+
+1. In the upper-right corner of any page, click your profile photo, then click Settings.
+
+2.In the left, click Repositories.
+
+3.Under "Repositories", click Deleted repositories.
+
+4.Next to the repository you want to restore, click Restore.
+
+5. Read the warning, then click I understand, restore this repository.
+
+
+## Create a Branch
+
+Branching is the way to work on different versions of a
+repository at one time.
+By default your repository has one branch named master
+which is considered to be the definitive branch. We use
+branches to experiment and make edits before committing 
+them to master (below we explain how to commit changes).
+When you create a branch off the master branch, you’re
+making a copy of master. When a change is
+ready, they merge their branch into master (below we explain how to merge branches).To create a new branch:
+
+1. Go to your new repository hello-world .
+2. Click the drop down at the top of the file list that says
+branch: master.
+3. Type a branch name, readme-edits, into the new
+branch text box.
+4. Select the blue Create branch box.
+
+Now you have two branches, master and
+readme-edits.
+
+#### Deleting a branch
+
+As we are going to see in this tutorial, you can have  branches automatically deleted after pull requests are merged in your repository. In other case, if you want to delete a branch follow the next steps. 
+
+1. On GitHub, navigate to the main page of the repository.
+
+2. Above the list of files, click  *NUMBER* branches. *Number* is equal to the actual number of branches that you have.
+
+3. Scroll to the branch that you want to delete, then click in the red bin.
+
+
+
+#### Viewing branches in your repository
+Branches are important to collaboration on GitHub, and the best way to view them is the branches page.
+
+1. On GitHub, navigate to the main page of the repository.
+
+2. Above the list of files, click  *NUMBER* branches.
+
+3. Branches link on overview page are shown. Use the navigation at the top of the page to view specific lists of branches: Your branches, Active branches, Stale branches and All branches.
+
+## Make and commit changes
+
+On GitHub, saved changes are called commits. Each commit
+has an associated commit message, which is a description
+explaining why a particular change was made. 
+
+
+1. Click the README.md file.
+2. Click the pencil icon in the upper right corner of the file
+view to edit.
+3. In the editor, write a bit about yourself.
+4. Write a commit message that describes your changes.
+5. Click Commit changes button.
+
+These changes will be made to just the README file on your
+readme-edits branch, so now this branch contains
+content that is different from master branch.
+
+
+## Open a Pull Request
+
+
+Pull Requests are the heart of collaboration on GitHub.
+When you open a pull request, you are proposing your
+changes and requesting that someone review and pull in
+your contribution and merge them into their branch. Pull
+requests show  differences (diffs) of the content from both branches. The changes, additions, and subtractions are
+shown in green and red. Open a Pull Request:
+
+1. Click the Pull
+Request tab, then
+from the Pull Request
+page, click the green
+New pull request
+button.
+
+
+2. In the Example
+Comparisons box,
+select the branch you
+made,
+readme-edits, to
+compare with
+master (the
+original).
+
+3. Look over your
+changes in the diffs
+on the Compare
+page, make sure
+they are what you want
+to submit.
+
+4. When you are satisfied
+that these are the
+changes you want to
+submit, click the big
+green Create Pull
+Request button.
+
+5. Give your pull request
+a title and write a
+brief description of
+your changes.
+
+6. Click Create pull
+request!
+
+
+
+## Merge your Pull Request
+
+In this final step, it’s time to bring your changes together –
+merging your readme-edits branch into the master
+branch.
+
+1. Click the green Merge pull request button to merge the
+changes into master .
+
+2. Click Confirm merge.
+
+3. Go ahead and delete the branch, since its changes have
+been incorporated.
+
+#### Resolving a merge conflict on GitHub
+You can resolve simple merge conflicts that involve competing line changes on GitHub, using the conflict editor.
+
+You can only resolve merge conflicts on GitHub that are caused by competing line changes, such as when people make different changes to the same line of the same file on different branches in your Git repository. 
+
+1. Under your repository name, click  Pull requests.
+
+
+2. In the "Pull Requests" list, click the pull request with a merge conflict that you would like to resolve.
+
+3. Near the bottom of your pull request, click Resolve conflicts.
+
+4. Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers <<<<<<<, =======, >>>>>>> and make the changes you want in the final merge.
+
+## Fork a repository
+
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+
+Open https://github.com/octocat/Spoon-Knife repository. Click fork, now we have a copy of such repository in our account. After forking this repository, you can make some changes to the project, and submit a Pull Request as we have seen before.
+
+
+# Git on Windows (work locally instead on the website)
+
+Now, we are going to work in local repository  on our computer which synchronizes with Github Website.
+
+## How to Install Git 
+
+To install Git on Windows you will need to download the installer from the Git website (https://git-scm.com/downloads). Select Run to begin the installation. Follow the steps, and in the last one check Launch Git Bash (initiate Git Bash) and complete the setup by selecting Finish.
+
+You can initiate the Git GUI from the bash shell. Type git gui at the command line. Once you open Git GUI you can select either **Create New, Clone Existing or Open Existing Repository**.
+
+In this tutorial we focus on Git GUI, but if someone prefers the command line, I recommended the tutorial on  https://kbroman.org/github_tutorial/pages/routine.html.
+
+## Setup SSH Keys
+Compared to Git Bash, setting up a SSH Key for your computer is relatively easy. Simply open Git GUI.
+
+Now click on Show SSH Key under the Help Menu.
+
+You can generate a SSH key by clicking on the Generate Key button. When you do so, you will need to supply a passphrase for security purposes. Remember this passphrase (password); you will need to use it later.
+
+
+Github needs to know your public SSH key. That is easily accessible; simply click the "Copy to Clipboard" button.
+
+On GitHub Website, go to Personal settings and then to SSH and GPG Keys and add your SSH key to the website.
+
+## Commit
+Now that the repository has been set up, you will need to tell git who you are so that commit messages will have the correct author. To do this, choose Edit and then Options.
+
+It is time to create something to commit. Clicking the Rescan button in the git gui will cause it to search out new, modified, and deleted files in the directory. Previously, create a file in such directory, for example a text file.
+
+To add the file for committing, click the icon to the left of the filename. The file will be moved from the Unstaged Changes pane to the Staged Changes pane. Now we can add a commit message and commit the change with the Commit button. We can modified the file and commit it again.
+
+## Pushing
+Before others can access our new file (code usually), we need to push these changes to our hosted repository. Without pushing the changes, others would not be able to access the code.
+
+Click on the Remote menu and select Add. The remote details that we need to add are: Name and Location. The location for the remote GitHub repository can be found by logging into GitHub Website, selecting the repository, clicking clone or download and copying the URL. Whereas in the name write origin.
+After adding the remote origin, you can simply press the Push button.
+
+## Branching
+To create a new branch in git gui, choose Branch and Create. The default options in the Create Branch dialog are all fine, so just enter the name and click Create.
+
+
+Now, I can make my new modifications and then I can commit the changes. 
+You can switch between these branches using git checkout.
+
+
+
+## Cloning a repository
+When you create a repository on GitHub, it exists as a remote repository. You can clone your repository to create a local copy on your computer.
+
+Go to Git and write git gui, then click on "Clone Existing Repository". In source location write the one obtained when you click clone or download in the Github Website. Then in Target Directory select the local directory where  you want to clone it (don't create the folder before, write the name of the folder after the path in the target directory).
+
+## Performing the fetch and merge operation
+
+Assume that changes are done in the remote repository. Then to have these changes in the local repository follow the steps.
+
+Go to the git gui and click on Remote menu and then in Fetch From and Origin.
+
+Until now, only fetch operation is completed. If you look the local folder, it should not display the changes that I added in the remote repository.
+
+The final step for completing the pull operation is performing the merge. For that, go to the Merge and Local Merge in top menu.
+
+Note: Do this for the directory that you have cloned before. Change the remote origin if it is necessary (remote, remove remote, and then add the new direction using add).
+
+## Prune remote branches
+
+In remote menu click on Prune from and origin for removing your local remote tracking branches where the branch no longer exists on the remote.
+
+In other words, deletes all stale remote-tracking branches. These stale branches have already been removed from the remote repository referenced, but are still locally available.
+
+
+## Some comments to finish
+
+1. In the repository menu you have the possibility of visualize all the changes that you have made in the master branch of your repository ("Visualize master's History"). It is also possible to see all the changes done in all the branches of a a repository using "Visualize All Branch History". In this buttom menu you also have the option to create a Desktop icon to a repository.
+
+
+2. Be careful with the URL in origin, if we change to a other respository we need to  change the origin URL as well.
+
+# GitHub Desktop 
+An alternative to Git GUI, described previously, is GitHub Desktop which is an open source Electron-based GitHub app.  GitHub Desktop is designed to simplify the all process and workflow in  GitHub.
+
+Github desktop has one disadvantage in comparison to Git GUI that leave us to focus in the second one. Github Desktop does not work in Linux. Anyway, if someone desire to explore this option it can be installed from https://help.github.com/es/desktop/getting-started-with-github-desktop/installing-github-desktop. Step-by-step guides to set up and use GitHub Desktop to manage your project can be found in https://help.github.com/en/desktop.
+
+
+# Version Control With GitHub and RStudio
+
+
+First step, open RStudio. If someone does not have installed RStudio yet, please do it from https://rstudio.com/products/rstudio/download/. 
+
+
+## Configure our Rstudio to access Github from Rstudio
+
+
+1. Go to Tools and then Global Options. A new window is opened, in this window click on Git/SVN.
+Due to the steps done previously this should be completed. In other case the paths for the git executable and for the SSH RSA key (must be something like C:/Users/Marta/.ssh/is_rsa) should be introduced. After this you need to restart Rstudio for these changes to take effect.
+
+2. If you want to check that the changes have been saved correctly go to Tools, Global Options and Git/SVN to check that.
+
+
+## Create a new project cloning a Github repository
+
+Now, that Rstudio is connected with Github, we create a new project.
+
+1. Go to File and New project.
+
+2. A new window is opened, and three options are shown:
+  -New Directory
+  -Existing Directory 
+  -Version Control.
+  
+3. Click in the last one which allow us to checkout a project from a version control repository. 
+
+
+4. In our case we want to work with Git hence in the next step select Git to clone a project from a Git repository.  
+
+5. To clone a project from a Git repository  we need the corresponding URL. Hence, we need to search this in the Github Website. If go click the buttom clone in the website we obtain such URL. 
+
+6. The project directory name is completed automatically after introducing the URL. 
+
+7. You can choose where you want to save your project in your computer.
+
+8. The clone repository window is opened and you must enter the password to complete the clone process.
+
+Rstudio is restarting automatically and you can see the changes: all the files that we have in the remote repository are also now in Rstudio, and furthermore a Git icon appears in below the menu.
+
+## Create a new file, commit it and push to Github
+
+1. Create a new file, and write some line of code, for example:
+for (i in 1:10){
+print("Hello-World")
+}
+
+2. Save the file. 
+
+3. We have the new file in RStudio and we want to push this file to the remote repository in Github. For this go to Tools, Version Control and commit (Ctrl+Alt+M also works).
+
+4. A new window opens and you can see the fields. 
+
+5. Click on the file that you want to see the content.
+
+6. In the commit message space write a description of the file. Then click on commit, an information window is opened automatically, read the messages and close it.
+
+7. We can push the file to our remote repository, we only need to click on the push buttom and introduce the password. 
+
+Now, go to Github Website and refresh it to check that the new file is there.
+Come back to Rstudio and makes changes in the file.
+Commit this changes and push it to the remote repository. We can see again in the Github Website the changes done in Rstudio.
+
+
+
+![I hope that this introduction to Github has been USEFUL. See you in Github!](photo.png)
+
+
+                                                                                                                                                                                      
+# If you want to introduce yourself in other Github possibilities...
+
+## Getting Started with GitHub Pages
+
+GitHub Pages are public webpages hosted and easily published through GitHub.
+
+1. Once you have signed in, you can create a new repository to get started.
+
+2. Go to create a new file and add a new file called "index.html".
+
+3. Commit the new file.
+
+4. Open the index.html file. The new file is empty.
+
+5. Introduced the following basic html code.
+
+```{r,eval=FALSE}
+<html>
+<title>
+First website.
+</title>
+</body>
+<hi>This is my first github page </hi>
+<body>
+<style>
+body{
+background-color:green;
+color:#fff;
+text-align:center;
+}
+</style>
+</html>
+```
+
+6. Create a new branch gh-pages.
+7. Go to settings, and then to Github Pages. 
+
+8. On Theme chooser select sa theme to publish your site.
+
+9. Select a custom domain.
+
+10. Now, you can see a message : "Your site is ready to be pusblished at ", if you click the link you can see the resulting website.
+
+
+If you obtain the message "IF YOU UPGRADE FROM GITHUB FREE TO GITHUB PRO", probability is because your repository is private, then go again to settings, and in Danger Zone click on make public. Go back now to step .
+
+The corresponding explanation can be founded in the video https://www.youtube.com/watch?v=bwThn0rxv7M.
+
