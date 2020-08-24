@@ -1,0 +1,150 @@
+---
+title: "Git and Github"
+author: "Marta Cousido Rocha"
+date: "10/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction 
+
+Git is a version control system, a tool that
+tracks changes in to your fields (for example, code field) and shares those changes with others. Git is most useful when combined with GitHub
+(http://github.com), a website that allows you to share your work (usually, code) with the world, ask improvements via **pull requests** (described below)
+and track issues. 
+
+
+Git + GitHub is the most popular version control system for developers of R packages (this is clear since the
+thousands of R packages hosted on GitHub).
+Git and GitHub are generally useful for all software development and data analysis, not just R packages. 
+
+
+# How to Create an Account on GitHub
+
+This section teaches you how to sign up for a free personal account on GitHub. Your free GitHub account gives you unlimited
+access to public and private software repositories and the ability to collaborate with up to **3 users**.
+
+To create your Github account follow the next steps.
+
+1. Go to https://github.com/join in a web browser. 
+2. Enter your personal information. 
+3. Click the green Create an account button. 
+4. Complete the CAPTCHA puzzle. The instructions vary by puzzle, so just follow the on-screen instructions
+to confirm that you are a human.
+5. Click the Choose button for your desired plan (Free, Pro, Team, or Enterprise). One you select a plan, GitHub will send an email
+confirmation message. To start the Free plan is a good choice.
+6. Click the Verify email address button in the message from GitHub. 
+7. Review your plan selection and click Continue. 
+8. Select your preferences and click Submit.
+
+Perfect! You have a Github account, please take note of your: Username, Email address and Password.
+
+# GitHub website
+
+Go to https://github.com/login and enter your Username or Email address and Password.
+
+
+## Fork a repository
+
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+
+Go to the repository that you want from other user. Click fork, now we have a copy of such repository in our account. After forking this repository, you can make some changes to the project, and submit a Pull Request which is explained above.
+
+
+# Git on Windows (work locally instead on the website)
+
+Now, we are going to work in local repository  on our computer which synchronizes with Github Website.
+
+## How to Install Git 
+
+To install Git on Windows you will need to download the installer from the Git website (https://git-scm.com/downloads). Select Run to begin the installation. Follow the steps, and complete the setup by selecting Finish.
+
+# Version Control With GitHub and RStudio
+
+
+First step, open RStudio. If someone does not have installed RStudio yet, please do it from https://rstudio.com/products/rstudio/download/. 
+
+
+## Create a new project cloning a Github repository
+
+Now, we create a new project.
+
+1. Go to File and New project.
+
+2. A new window is opened, and three options are shown:
+  -New Directory
+  -Existing Directory 
+  -Version Control.
+  
+3. Click in the last one which allow us to checkout a project from a version control repository. 
+
+
+4. In our case we want to work with Git hence in the next step select Git to clone a project from a Git repository.  
+
+5. To clone a project from a Git repository  we need the corresponding URL. Hence, we need to search this in the Github Website. If go click the buttom clone in the website we obtain such URL. 
+
+6. The project directory name is completed automatically after introducing the URL. 
+
+7. You can choose where you want to save your project in your computer.
+
+8. The clone repository window is opened and you must enter the password to complete the clone process.
+
+Rstudio is restarting automatically and you can see the changes: all the files that we have in the remote repository are also now in Rstudio, and furthermore a Git icon appears in below the menu.
+
+## Create a new file, commit it and push to Github
+
+1. Create a new file, and write some line of code.
+
+2. Save the file. 
+
+3. We have the new file in RStudio and we want to push this file to the remote repository in Github. For this go to Tools, Version Control and commit (Ctrl+Alt+M also works).
+
+4. A new window opens and you can see the fields. 
+
+5. Click on the file that you want to see the content.
+
+6. In the commit message space write a description of the file. Then click on commit, an information window is opened automatically, read the messages and close it.
+
+7. We can push the file to our remote repository, we only need to click on the push buttom and introduce the password. 
+
+Now, go to Github Website and refresh it to check that the new file is there.
+
+
+## Open a Pull Request (after a fork)
+
+NOTE: Comments of this point for pull request related to different branches can be founde in the tutorial https://github.com/IMPRESSPROJECT/Useful-tutorials-. Here we focus on pull request of a forked repository.
+
+Pull Requests are the heart of collaboration on GitHub.
+When you open a pull request, you are proposing your
+changes and requesting that someone review and pull in
+your contribution and merge them into their repository. Pull
+requests show  differences (diffs) of the content from both repositories. The changes, additions, and subtractions are
+shown in green and red. Open a Pull Request:
+
+Click the Pull
+Request tab, then
+from the Pull Request
+page, click the green
+New pull request
+button. Click the big
+green Create Pull
+Request button.
+
+Give your pull request
+a title and write a
+brief description of
+your changes.
+
+Click Create pull
+request!
+
+The owner of the other account will merge the content if everything is fine!
+
+
+
+
+                                                                                 
