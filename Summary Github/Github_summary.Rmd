@@ -1,7 +1,7 @@
 ---
 title: "Git and Github"
 author: "Marta Cousido Rocha"
-date: "10/12/2019"
+date: "26/08/2020"
 output: html_document
 ---
 
@@ -27,7 +27,7 @@ Git and GitHub are generally useful for all software development and data analys
 This section teaches you how to sign up for a free personal account on GitHub. Your free GitHub account gives you unlimited
 access to public and private software repositories and the ability to collaborate with up to **3 users**.
 
-To create your Github account follow the next steps.
+To create your Github account follow the next steps (the order may change a bit due to updates).
 
 1. Go to https://github.com/join in a web browser. 
 2. Enter your personal information. 
@@ -85,7 +85,7 @@ Now, we create a new project.
 
 4. In our case we want to work with Git hence in the next step select Git to clone a project from a Git repository.  
 
-5. To clone a project from a Git repository  we need the corresponding URL. Hence, we need to search this in the Github Website. If go click the buttom clone in the website we obtain such URL. 
+5. To clone a project from a Git repository  we need the corresponding URL. Hence, we need to search this in the Github Website. If you click the green buttom code in the website we obtain such URL. 
 
 6. The project directory name is completed automatically after introducing the URL. 
 
@@ -93,7 +93,7 @@ Now, we create a new project.
 
 8. The clone repository window is opened and you must enter the password to complete the clone process.
 
-Rstudio is restarting automatically and you can see the changes: all the files that we have in the remote repository are also now in Rstudio, and furthermore a Git icon appears in below the menu.
+Rstudio is restarting automatically and you can see the changes: all the files that we have in the remote repository are also now in Rstudio, and furthermore a Git icon appears below the menu.
 
 ## Create a new file, commit it and push to Github
 
@@ -116,13 +116,13 @@ Now, go to Github Website and refresh it to check that the new file is there.
 
 ## Open a Pull Request (after a fork)
 
-NOTE: Comments of this point for pull request related to different branches can be founde in the tutorial https://github.com/IMPRESSPROJECT/Useful-tutorials-. Here we focus on pull request of a forked repository.
+NOTE: Comments of pull requests related to different branches can be founded in the tutorial https://github.com/IMPRESSPROJECT/Useful-tutorials-. Here we focus on pull requests of a forked repository.
 
 Pull Requests are the heart of collaboration on GitHub.
 When you open a pull request, you are proposing your
 changes and requesting that someone review and pull in
 your contribution and merge them into their repository. Pull
-requests show  differences (diffs) of the content from both repositories. The changes, additions, and subtractions are
+requests show  differences of the content from both repositories. The changes, additions, and subtractions are
 shown in green and red. Open a Pull Request:
 
 Click the Pull
